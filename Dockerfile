@@ -21,3 +21,4 @@ VOLUME /etc/webhook /etc/pyrosimple
 EXPOSE 9000
 
 ENTRYPOINT ["/usr/local/bin/webhook"]
+CMD ["-verbose", "-hooks=/etc/webhook/hooks.json", "-hotreload"]
